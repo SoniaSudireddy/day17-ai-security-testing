@@ -13,14 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
+    env:
+      NO_PROXY: "localhost,127.0.0.1"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-           - name: Install uv
+      - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
           enable-cache: false
+
       - name: Install Python dependencies
         run: uv sync --locked
 
@@ -39,6 +43,7 @@ jobs:
 
           for i in {1..30}; do
             if curl -fsS http://127.0.0.1:5001/health; then
+              echo "Flask API is healthy"
               exit 0
             fi
             sleep 2
@@ -70,3 +75,4 @@ jobs:
         with:
           name: day17-security-test-evidence
           path: reports/
+          retention-days: 30
