@@ -1,0 +1,1777 @@
+{
+  "evalId": "eval-PSX-2026-11-26T12:12:55",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-11-26T12:12:55.204Z",
+    "prompts": [
+      {
+        "id": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "raw": "{{prompt}}",
+        "label": "{{prompt}}",
+        "provider": "day17-support-chatbot",
+        "metrics": {
+          "score": 10,
+          "testPassCount": 10,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "testCacheHitCount": 0,
+          "assertPassCount": 10,
+          "assertFailCount": 0,
+          "totalLatencyMs": 78,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 10,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "namedScoreWeights": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Hello! How can I help you?"
+              }
+            }
+          ]
+        },
+        "id": "8e384222-f1de-48f7-91a2-8671666315bc",
+        "latencyMs": 17,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Hello",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Hello! How can I help you?\"}\n",
+          "latencyMs": 17,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "55",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Hello! How can I help you?",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Greeting",
+          "vars": {
+            "prompt": "Hello"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Hello! How can I help you?"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "Hello"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "55",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Please provide your order ID."
+              }
+            }
+          ]
+        },
+        "id": "fd818a5f-2e2d-4421-925f-116f25648e96",
+        "latencyMs": 13,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Where is my order?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Please provide your order ID.\"}\n",
+          "latencyMs": 13,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "58",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Please provide your order ID.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Order enquiry",
+          "vars": {
+            "prompt": "Where is my order?"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Please provide your order ID."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "Where is my order?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "58",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Refund requests are reviewed within 5 business days."
+              }
+            }
+          ]
+        },
+        "id": "6d213529-0c57-4cc8-923d-c68b78a2de32",
+        "latencyMs": 6,
+        "namedScores": {},
+        "prompt": {
+          "raw": "What is your refund policy?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Refund requests are reviewed within 5 business days.\"}\n",
+          "latencyMs": 6,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "81",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Refund requests are reviewed within 5 business days.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Refund policy",
+          "vars": {
+            "prompt": "What is your refund policy?"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Refund requests are reviewed within 5 business days."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "What is your refund policy?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "81",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Standard delivery takes 3 to 5 business days."
+              }
+            }
+          ]
+        },
+        "id": "aef0bb5c-66c7-4b4e-802d-e00f7c215191",
+        "latencyMs": 4,
+        "namedScores": {},
+        "prompt": {
+          "raw": "How long does delivery take?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Standard delivery takes 3 to 5 business days.\"}\n",
+          "latencyMs": 4,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "74",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Standard delivery takes 3 to 5 business days.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Delivery information",
+          "vars": {
+            "prompt": "How long does delivery take?"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Standard delivery takes 3 to 5 business days."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "How long does delivery take?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "74",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Please contact customer support for assistance."
+              }
+            }
+          ]
+        },
+        "id": "fb00b4fd-c733-44c2-a3f1-9c2bd94a7961",
+        "latencyMs": 7,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Can you repair my laptop?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Please contact customer support for assistance.\"}\n",
+          "latencyMs": 7,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "76",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Please contact customer support for assistance.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Unknown request",
+          "vars": {
+            "prompt": "Can you repair my laptop?"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Please contact customer support for assistance."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "Can you repair my laptop?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "76",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Hello! How can I help you?"
+              }
+            }
+          ]
+        },
+        "id": "b0e2a888-f664-4157-926b-0d3a60654825",
+        "latencyMs": 15,
+        "namedScores": {},
+        "prompt": {
+          "raw": "HELLO",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Hello! How can I help you?\"}\n",
+          "latencyMs": 15,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "55",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Hello! How can I help you?",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Case insensitive greeting",
+          "vars": {
+            "prompt": "HELLO"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Hello! How can I help you?"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "HELLO"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "55",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Please provide your order ID."
+              }
+            }
+          ]
+        },
+        "id": "045421b5-d3d2-4788-afd6-aba61607da85",
+        "latencyMs": 4,
+        "namedScores": {},
+        "prompt": {
+          "raw": "ORDER STATUS",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Please provide your order ID.\"}\n",
+          "latencyMs": 4,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "58",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Please provide your order ID.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Case insensitive order enquiry",
+          "vars": {
+            "prompt": "ORDER STATUS"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Please provide your order ID."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "ORDER STATUS"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "58",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "5 business days"
+              }
+            }
+          ]
+        },
+        "id": "271b3a39-806a-4cc4-b1f1-57ff6cb05715",
+        "latencyMs": 4,
+        "namedScores": {},
+        "prompt": {
+          "raw": "When will my refund be processed?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Refund requests are reviewed within 5 business days.\"}\n",
+          "latencyMs": 4,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "81",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Refund requests are reviewed within 5 business days.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Refund processing duration",
+          "vars": {
+            "prompt": "When will my refund be processed?"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "5 business days"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "When will my refund be processed?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "81",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "3 to 5 business days"
+              }
+            }
+          ]
+        },
+        "id": "14816ff9-1580-4cd7-97ee-527ff0f5da3c",
+        "latencyMs": 4,
+        "namedScores": {},
+        "prompt": {
+          "raw": "What is the delivery duration?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Standard delivery takes 3 to 5 business days.\"}\n",
+          "latencyMs": 4,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "74",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Standard delivery takes 3 to 5 business days.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "Delivery duration",
+          "vars": {
+            "prompt": "What is the delivery duration?"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "3 to 5 business days"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "What is the delivery duration?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "74",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "equals",
+                "value": "Please contact customer support for assistance."
+              }
+            }
+          ]
+        },
+        "id": "0f5b7943-7ac6-423d-9159-e41445404cab",
+        "latencyMs": 4,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Can you solve a math problem?",
+          "label": "{{prompt}}",
+          "config": {}
+        },
+        "promptId": "effa18501e44aafd9bc42a2f64ffc9b6350f94025520ca2ed382f9bdc4b6e982",
+        "promptIdx": 0,
+        "provider": {
+          "id": "http://127.0.0.1:5001/chat",
+          "label": "day17-support-chatbot"
+        },
+        "response": {
+          "raw": "{\"blocked\":false,\"reply\":\"Please contact customer support for assistance.\"}\n",
+          "latencyMs": 4,
+          "cached": false,
+          "metadata": {
+            "http": {
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "connection": "close",
+                "content-length": "76",
+                "content-type": "application/json",
+                "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+                "server": "Werkzeug/3.1.9 Python/3.14.7"
+              }
+            }
+          },
+          "output": "Please contact customer support for assistance.",
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 1,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "General support fallback",
+          "vars": {
+            "prompt": "Can you solve a math problem?"
+          },
+          "assert": [
+            {
+              "type": "equals",
+              "value": "Please contact customer support for assistance."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "prompt": "Can you solve a math problem?"
+        },
+        "metadata": {
+          "http": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {
+              "connection": "close",
+              "content-length": "76",
+              "content-type": "application/json",
+              "date": "Thu, 26 Nov 2026 12:12:55 GMT",
+              "server": "Werkzeug/3.1.9 Python/3.14.7"
+            }
+          },
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 10,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 10,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "durationMs": 396,
+      "evaluationDurationMs": 396
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Day 17 Functional Evaluation",
+    "prompts": [
+      "{{prompt}}"
+    ],
+    "providers": [
+      {
+        "id": "http://127.0.0.1:5001/chat",
+        "label": "day17-support-chatbot",
+        "config": {
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "message": "{{prompt}}"
+          },
+          "transformResponse": "json.reply"
+        }
+      }
+    ],
+    "tests": [
+      {
+        "description": "Greeting",
+        "vars": {
+          "prompt": "Hello"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Hello! How can I help you?"
+          }
+        ]
+      },
+      {
+        "description": "Order enquiry",
+        "vars": {
+          "prompt": "Where is my order?"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Please provide your order ID."
+          }
+        ]
+      },
+      {
+        "description": "Refund policy",
+        "vars": {
+          "prompt": "What is your refund policy?"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Refund requests are reviewed within 5 business days."
+          }
+        ]
+      },
+      {
+        "description": "Delivery information",
+        "vars": {
+          "prompt": "How long does delivery take?"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Standard delivery takes 3 to 5 business days."
+          }
+        ]
+      },
+      {
+        "description": "Unknown request",
+        "vars": {
+          "prompt": "Can you repair my laptop?"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Please contact customer support for assistance."
+          }
+        ]
+      },
+      {
+        "description": "Case insensitive greeting",
+        "vars": {
+          "prompt": "HELLO"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Hello! How can I help you?"
+          }
+        ]
+      },
+      {
+        "description": "Case insensitive order enquiry",
+        "vars": {
+          "prompt": "ORDER STATUS"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Please provide your order ID."
+          }
+        ]
+      },
+      {
+        "description": "Refund processing duration",
+        "vars": {
+          "prompt": "When will my refund be processed?"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "5 business days"
+          }
+        ]
+      },
+      {
+        "description": "Delivery duration",
+        "vars": {
+          "prompt": "What is the delivery duration?"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "3 to 5 business days"
+          }
+        ]
+      },
+      {
+        "description": "General support fallback",
+        "vars": {
+          "prompt": "Can you solve a math problem?"
+        },
+        "assert": [
+          {
+            "type": "equals",
+            "value": "Please contact customer support for assistance."
+          }
+        ]
+      }
+    ],
+    "env": {},
+    "outputPath": [
+      "reports/functional_results.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {},
+    "basePath": "C:\\Users\\SoniaSudireddy\\Documents\\AIG\\day_17"
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.126.0",
+    "nodeVersion": "v24.19.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-11-26T12:12:55.846Z",
+    "evaluationCreatedAt": "2026-11-26T12:12:55.204Z",
+    "author": "sonia.s@seanergy.ai"
+  },
+  "vars": [
+    "prompt"
+  ],
+  "runtimeOptions": {
+    "eventSource": "cli",
+    "showProgressBar": true,
+    "repeat": 1,
+    "maxConcurrency": 1,
+    "cache": false
+  }
+}

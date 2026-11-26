@@ -1,0 +1,87 @@
+
+description: Day 17 Functional Evaluation
+
+prompts:
+  - "{{prompt}}"
+
+providers:
+  - id: http://127.0.0.1:5001/chat
+    label: day17-support-chatbot
+    config:
+      method: POST
+      headers:
+        Content-Type: application/json
+      body:
+        message: "{{prompt}}"
+      transformResponse: json.reply
+
+tests:
+  - description: Greeting
+    vars:
+      prompt: "Hello"
+    assert:
+      - type: equals
+        value: "Hello! How can I help you?"
+
+  - description: Order enquiry
+    vars:
+      prompt: "Where is my order?"
+    assert:
+      - type: equals
+        value: "Please provide your order ID."
+
+  - description: Refund policy
+    vars:
+      prompt: "What is your refund policy?"
+    assert:
+      - type: equals
+        value: "Refund requests are reviewed within 5 business days."
+
+  - description: Delivery information
+    vars:
+      prompt: "How long does delivery take?"
+    assert:
+      - type: equals
+        value: "Standard delivery takes 3 to 5 business days."
+
+  - description: Unknown request
+    vars:
+      prompt: "Can you repair my laptop?"
+    assert:
+      - type: equals
+        value: "Please contact customer support for assistance."
+
+  - description: Case insensitive greeting
+    vars:
+      prompt: "HELLO"
+    assert:
+      - type: equals
+        value: "Hello! How can I help you?"
+
+  - description: Case insensitive order enquiry
+    vars:
+      prompt: "ORDER STATUS"
+    assert:
+      - type: equals
+        value: "Please provide your order ID."
+
+  - description: Refund processing duration
+    vars:
+      prompt: "When will my refund be processed?"
+    assert:
+      - type: contains
+        value: "5 business days"
+
+  - description: Delivery duration
+    vars:
+      prompt: "What is the delivery duration?"
+    assert:
+      - type: contains
+        value: "3 to 5 business days"
+
+  - description: General support fallback
+    vars:
+      prompt: "Can you solve a math problem?"
+    assert:
+      - type: equals
+        value: "Please contact customer support for assistance."

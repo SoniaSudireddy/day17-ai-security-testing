@@ -1,0 +1,35 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [26/Nov/2026 17:34:03] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:03] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:12] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:15] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:17] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:19] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:21] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:23] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:25] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:26] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:28] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:30] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:32] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:34] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:36] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:37] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:39] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:41] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:43] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:45] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:48] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:49] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:51] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:53] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:54] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:56] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:58] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:34:59] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:35:01] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:35:03] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:35:05] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 17:35:06] "POST /chat HTTP/1.1" 200 -

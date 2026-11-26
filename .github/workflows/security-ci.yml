@@ -1,0 +1,71 @@
+
+name: Day 17 Security and Functional CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  security-testing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install Python dependencies
+        run: uv sync --locked
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Create reports directory
+        run: mkdir -p reports
+
+      - name: Start Flask API
+        run: |
+          nohup uv run python app.py \
+            > reports/flask-output.log 2>&1 &
+
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:5001/health; then
+              exit 0
+            fi
+            sleep 2
+          done
+
+          cat reports/flask-output.log
+          exit 1
+
+      - name: Run manual injection tests
+        run: uv run python manual_injection_tests.py
+
+      - name: Run functional evaluation
+        run: |
+          npx --yes promptfoo@0.126.0 eval \
+            -c functional_eval.yaml \
+            --no-cache -j 1 \
+            -o reports/functional_results.json
+
+      - name: Run security regression evaluation
+        run: |
+          npx --yes promptfoo@0.126.0 eval \
+            -c security_eval.yaml \
+            --no-cache -j 1 \
+            -o reports/security_results.json
+
+      - name: Upload test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: day17-security-test-evidence
+          path: reports/
